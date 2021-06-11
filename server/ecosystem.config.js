@@ -5,7 +5,7 @@ module.exports = {
   }],
   deploy: {
     production: {
-      user: 'ubuntu',
+      user: 'database',
       host: 'ec2-3-140-90-28.us-east-2.compute.amazonaws.com',
       key: './sdc-db.pem',
       ref: 'origin/main',
