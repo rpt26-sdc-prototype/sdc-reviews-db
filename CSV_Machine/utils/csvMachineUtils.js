@@ -1,7 +1,7 @@
 const {
   packages: { fs, path, performance },
   logs: { log, logGenerationUpdates }
-} = require('../config/config.js');
+} = require('../machineConfig/machineConfig.js');
 
 module.exports = {
   drainWriter: async ({ title, template, constraints: { _totalRecordsNumber, statusUpdateInterval, primaryRecordNumber: pRN, _userRecordsNumber: _uRN } }) => {
@@ -37,7 +37,7 @@ module.exports = {
 
   postDBQuery: async ({ title, dBResetStr, dBQueryStr, dBCountStr }) => {
     try {
-      const client = require(path.resolve(`config/PGIndex.js`));
+      const client = require(path.resolve(`machineConfig/PGIndex.js`));
       await client.query(dBResetStr);
       await client.query(dBQueryStr);
     } catch (err) {

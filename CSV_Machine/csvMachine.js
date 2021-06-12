@@ -1,7 +1,7 @@
 const {
   logs: { log, logStart, logVictoryMessage },
   utils: { drainWriter, postDBQuery }
-} = require('./config/config.js');
+} = require('./machineConfig/machineConfig.js');
 
 module.exports = async function (provisions) {
   try {
