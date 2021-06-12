@@ -2,7 +2,7 @@ const {
   packages: { path },
   random: { generateInBetweenSync: gIBS, randomString: rS, twoValProb: tVP, threeValProb: rEVP },
   userConstraints, reviewConstraints
-} = require('./config.js');
+} = require('./machineConfig.js');
 
 module.exports = {
   userProvisions: {

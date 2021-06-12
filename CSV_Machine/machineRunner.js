@@ -1,4 +1,4 @@
-const { userProvisions: uP, reviewProvisions: rP } = require('./config/provisions.js');
+const { userProvisions: uP, reviewProvisions: rP } = require('./machineConfig/provisions.js');
 const client = require('./machineConfig/PGIndex.js');
 
 (async () => {
