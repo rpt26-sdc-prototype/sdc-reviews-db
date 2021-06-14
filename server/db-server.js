@@ -16,7 +16,7 @@ app.get('/reviews/:gameID', async ({params: {gameID}}, res) => {
     const reviews = await getGameReviews(gameID);
     res.send(reviews);
   } catch (err) {
-    console.log(err);
+    console.error(err);
     res.send(err);
   }
 });

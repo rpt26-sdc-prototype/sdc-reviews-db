@@ -11,7 +11,7 @@ module.exports = {
       ref: 'origin/main',
       repo: 'https://github.com/rpt26-sdc-prototype/sdc-reviews-db.git',
       path: '/home/ubuntu/sdc-db',
-      'post-deploy': 'npm install && pm2 startOrRestart ./server/ecosystem.config.js'
+      'post-deploy': 'npm install && pm2 startOrRestart ./server/ecosystem.config.js && pm2 save'
     }
   }
 }

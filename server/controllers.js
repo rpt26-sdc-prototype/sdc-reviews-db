@@ -43,8 +43,9 @@ module.exports = {
 
       return results;
     } catch (err) {
-      console.log(err);
-      return err;
+      // console.log(err);
+      // return err;
+      throw new Error(err);
     }
   }
 };
