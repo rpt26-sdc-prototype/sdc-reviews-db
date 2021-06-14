@@ -7,7 +7,7 @@ module.exports = {
     production: {
       user: 'ubuntu',
       host: 'ec2-3-140-90-28.us-east-2.compute.amazonaws.com',
-      key: './sdc-db.pem',
+      key: './Login_Scripts/sdc-db.pem',
       ref: 'origin/main',
       repo: 'https://github.com/rpt26-sdc-prototype/sdc-reviews-db.git',
       path: '/home/ubuntu/sdc-db',
