@@ -6,16 +6,17 @@ app.use(cors());
 
 const { getGameReviews } = require('./controllers.js');
 
-app.use('*', (req, res, next) => {
-  console.log(req.method, req.originalUrl);
-  next();
- });
+// app.use('*', (req, res, next) => {
+//   console.log(req.method, req.originalUrl);
+//   next();
+//  });
 
 app.get('/reviews/:gameID', async ({params: {gameID}}, res) => {
   try {
     const reviews = await getGameReviews(gameID);
     res.send(reviews);
   } catch (err) {
+    console.log(err);
     res.send(err);
   }
 });
